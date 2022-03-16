@@ -1,5 +1,5 @@
-<html>
-    <body>
+
+  
 <h1>Example :: Get Somu</h1>
 <li>id: <span id="_id"></span></li>
 <li>name: <span id="_name"></span></li>
@@ -43,7 +43,7 @@ function errorFunctionName(e) {
     function sendDataToServer(data) {
         var ajax = new XMLHttpRequest();
         ajax.onload = receiveResponse;
-        ajax.open("POST", "http://localhost:8080/api/hello", true);
+        ajax.open("POST", "http://localhost:8090/api/hello", true);
         ajax.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         ajax.send(JSON.stringify({ name: data }));
     }
@@ -55,5 +55,5 @@ function errorFunctionName(e) {
 
 </script>
 
-    </body>
-</html>
+    
+
